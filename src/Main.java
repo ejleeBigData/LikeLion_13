@@ -12,10 +12,12 @@ public class Main {
         fruits.add("Durian");
         fruits.add("Green Grape");
 
-        Collections.sort(fruits);
+        String fruit = "Kiwi";
 
-        for(String fruit: fruits) {
-            System.out.println(fruit);
+        if( fruits.contains(fruit) ) {
+            System.out.println(fruit + " 있음");
+        } else {
+            System.out.println(fruit + " 없음.");
         }
 
     }
