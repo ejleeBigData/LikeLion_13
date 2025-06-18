@@ -1,22 +1,19 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        Set<String> fruits = new HashSet<>();
+        Map<String, Integer> SnackPrices = new HashMap<>();
 
-        fruits.add("Apple");
-        fruits.add("Banna");
-        fruits.add("banna");
-        fruits.add("Cherry");
-        fruits.add("Tomato");
-        fruits.add("Durian");
-        fruits.add("Green Grape");
-        fruits.add("tomato");
+        SnackPrices.put("Juice", 2500);
+        SnackPrices.put("Candy", 1500);
+        SnackPrices.put("Coke",  2000);
+        SnackPrices.put("Chip",  3500);
+        SnackPrices.put("Jelly", 1800);
 
-        for(String fruit : fruits) {
-            System.out.println(fruit.hashCode());
+        for(Map.Entry<String, Integer> entry : SnackPrices.entrySet() ) {
+            System.out.println(entry.getKey() + " 값 : " + entry.getValue() + " 원");
         }
-
     }
 
 }
