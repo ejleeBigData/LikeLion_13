@@ -13,22 +13,11 @@ public class Main {
         fruits.add("Durian");
         fruits.add("Green Grape");
 
-        String fruit = "Tomato";
+        System.out.println(fruits.size());
 
-        if( fruits.contains(fruit) ) {
+        fruits.clear();
 
-            System.out.println(fruit + " 있음");
-
-            //fruits.remove(fruit);
-            fruits.remove(fruits.indexOf(fruit));
-
-        } else {
-            System.out.println(fruit + " 없음.");
-        }
-
-        for(String f : fruits) {
-            System.out.println(f + "의 인덱스는 :" + fruits.indexOf(f));
-        }
+        System.out.println(fruits.size());
 
     }
 
