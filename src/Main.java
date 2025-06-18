@@ -14,14 +14,9 @@ public class Main {
         fruits.add("tomato");
 
         for(String fruit : fruits) {
-            System.out.println(fruit);
+            System.out.println(fruit.hashCode());
         }
 
-        Iterator<String> it = fruits.iterator();
-        while (it.hasNext()) {
-            String item = it.next();
-            System.out.println(item);
-        }
     }
 
 }
