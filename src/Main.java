@@ -2,23 +2,26 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        List<String> fruits = new ArrayList<String>();
+        Set<String> fruits = new HashSet<>();
 
-        fruits.add("");
-        fruits.add("Elderberry");
-        fruits.add("Melon");
         fruits.add("Apple");
         fruits.add("Banna");
+        fruits.add("banna");
         fruits.add("Cherry");
         fruits.add("Tomato");
         fruits.add("Durian");
         fruits.add("Green Grape");
+        fruits.add("tomato");
 
-        String fruit = "Banana";
+        for(String fruit : fruits) {
+            System.out.println(fruit);
+        }
 
-        System.out.println("인덱스 : " + fruits.indexOf(fruit) );
-
-
+        Iterator<String> it = fruits.iterator();
+        while (it.hasNext()) {
+            String item = it.next();
+            System.out.println(item);
+        }
     }
 
 }
